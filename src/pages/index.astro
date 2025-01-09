@@ -1,11 +1,19 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Reg from '../components/reg-line.astro';
+import Graph from '../components/graph.astro';
+import Layout from "../layouts/Layout.astro";
 ---
+  <Layout pagetitle="S&amp;P 500 Index (1931-2030)">
+    <main class="center">
+    <p>We are exploring the S&P 500 market index using basic time series analysis techniques just for fun.</p>
+    <h2>Original Graph</h2>
 
-<Layout>
-	<Welcome />
+    <Graph />
+
+<hr>
+<h2>After applying regression:</h2>
+<Reg />
+
+</main>
+  
 </Layout>

@@ -1,0 +1,33 @@
+:root{
+  --bg: #282a35;
+  --light-text:#ffffff;
+}
+@font-face {
+  font-family: 'Poppins'; 
+  src: url('/public/fonts/Poppins/Poppins-Regular.ttf'); 
+}
+html, body {
+  font-family: Poppins;
+    box-sizing: border-box;
+    display: flow-root;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.center{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+nav{
+  background-color: var(--bg);
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  
+}
+nav a {
+  color: var(--light-text);
+  padding-right: 10px;
+}
